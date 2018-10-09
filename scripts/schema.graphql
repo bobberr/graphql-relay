@@ -1,0 +1,12 @@
+type Query {
+  logInAdmin(login: String!, password: String!): Boolean
+  checkAuth: Boolean
+}
+type Test {
+  id: ID
+  test: String
+}
+type Mutation {
+  adminLogIn(login: String, password: String): Boolean
+  logOutMutation: Boolean
+}

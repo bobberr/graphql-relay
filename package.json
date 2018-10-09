@@ -1,0 +1,43 @@
+{
+  "name": "tcp",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-relay": "^1.7.0-rc.1",
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.1",
+    "cors": "^2.8.4",
+    "express-graphql": "^0.6.12",
+    "express-session": "^1.15.6",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.0",
+    "history": "^4.7.2",
+    "mongoose": "^5.3.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-relay": "^1.7.0-rc.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.0.0-next.3e165448",
+    "relay-compiler": "^1.7.0-rc.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "relay": "relay-compiler --schema scripts/schema.graphql --src src",
+    "fetch-schema": "node scripts/fetch-schema.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">0.25%",
+      "not op_mini all",
+      "ie 11"
+    ]
+  }
+}
